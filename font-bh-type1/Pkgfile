@@ -20,5 +20,5 @@ build() {
 
 	make -j1 DESTDIR=$PKG install
 
-	rm $PKG/usr/share/fonts/Type1/fonts.dir
+	rm $PKG/usr/share/fonts/Type1/fonts.{dir,scale}
 }
