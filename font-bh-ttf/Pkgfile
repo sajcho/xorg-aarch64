@@ -20,5 +20,5 @@ build() {
 
 	make DESTDIR=$PKG install
 
-	rm $PKG/usr/share/fonts/truetype/fonts.dir
+	rm $PKG/usr/share/fonts/truetype/fonts.{dir,scale}
 }
