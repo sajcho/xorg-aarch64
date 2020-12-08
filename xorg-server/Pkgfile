@@ -4,13 +4,12 @@
 # Depends on:	bdftopcf font-util libdmx libepoxy libxaw libxcomposite libxcursor libxfont2 libxft libxinerama libxkbfile libxres libxtst libxxf86dga mkfontscale nettle wayland-protocols xcb-util-keysyms xcb-util-wm xcb-util-xrm xcb-util-cursor
 
 name=xorg-server
-version=1.20.9
+version=1.20.10
 release=0
 source=(https://www.x.org/releases/individual/xserver/${name}-${version}.tar.bz2 \
 	xserver-autobind-hotplug.patch \
 	0001-v2-FS-58644.patch \
 	0002-fix-libshadow-2.patch \
-	0001-xfree86-Take-second-reference-for-SavedCursor-in-xf8.patch \
 	0001-Fix-segfault-on-probing-a-non-PCI-platform-device-on.patch)
 
 build() {
@@ -19,7 +18,6 @@ build() {
 	patch -Np1 -i $SRC/xserver-autobind-hotplug.patch
 	patch -Np1 -i $SRC/0001-v2-FS-58644.patch
 	patch -Np1 -i $SRC/0002-fix-libshadow-2.patch
-	patch -Np1 -i $SRC/0001-xfree86-Take-second-reference-for-SavedCursor-in-xf8.patch
 	patch -Np1 -i $SRC/0001-Fix-segfault-on-probing-a-non-PCI-platform-device-on.patch
 
 	_fontroot="/usr/share/fonts"
