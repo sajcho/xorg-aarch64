@@ -4,7 +4,7 @@
 # Depends on:	elfutils libdrm libglvnd libva libvdpau llvm-toolchain python3-mako wayland wayland-protocols libx11 libxdamage libxml2 libxrandr libxshmfence libxxf86vm
 
 name=mesa
-version=20.2.1
+version=20.3.0
 release=0
 source=(https://mesa.freedesktop.org/archive/${name}-${version}.tar.xz)
 
@@ -12,7 +12,7 @@ build() {
 	cd ${name}-${version}
 
 	build-meson \
-		-Dplatforms=x11,drm,wayland \
+		-Dplatforms=x11,wayland \
 		-Dllvm=enabled \
 		-Dgbm=enabled \
 		-Dgles1=disabled \
