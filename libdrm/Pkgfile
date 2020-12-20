@@ -21,7 +21,7 @@ build() {
 		-Dman-pages=false \
 		-Dvalgrind=false \
 		-Dcairo-tests=false \
-		build
+		. build
 
 	meson compile ${JOBS:+-j ${JOBS}} -C build
 
