@@ -16,5 +16,6 @@ build() {
 		--with-mapdir=/usr/share/fonts/util
 
 	make
+
 	make DESTDIR=$PKG install
 }
