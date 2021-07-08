@@ -1,11 +1,11 @@
 # Description:	A library for handling OpenGL function pointer management
 # URL:		https://github.com/anholt/libepoxy
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	libx11 mesa
+# Depends on:	mesa
 
 name=libepoxy
 version=1.5.4
-release=0
+release=1
 source=(https://github.com/anholt/libepoxy/releases/download/${version}/${name}-${version}.tar.xz)
 
 build() {
