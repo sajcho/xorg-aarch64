@@ -1,11 +1,11 @@
 # Description:	Free reimplementation of OpenGL Utility Toolkit (GLUT) library
 # URL:		http://freeglut.sourceforge.net/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	cmake glu libx11 libice libxi libxxf86vm
+# Depends on:	glu libice libxi
 
 name=freeglut
 version=3.2.1
-release=0
+release=1
 source=(https://downloads.sourceforge.net/${name}/${name}-${version}.tar.gz)
 
 build() {
