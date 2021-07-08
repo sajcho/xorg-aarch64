@@ -1,11 +1,11 @@
 # Description:	X Window System initializer
 # URL:		http://xorg.freedesktop.org
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	libx11 util-macros xauth xmodmap xrdb
+# Depends on:	xauth xmodmap xrdb
 
 name=xinit
 version=1.4.1
-release=0
+release=1
 source=(https://www.x.org/releases/individual/app/${name}-${version}.tar.bz2 \
 	06_move_serverauthfile_into_tmp.patch \
 	Xsession xinitrc xsession.skel xserverrc)
