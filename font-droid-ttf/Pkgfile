@@ -1,11 +1,11 @@
 # Description:	General-purpose fonts released by Google as part of Android
 # URL:		http://code.google.com/android/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	encodings fontconfig font-util mkfontscale
+# Depends on:	encodings fontconfig font-util
 
 name=font-droid-ttf
 version=20200215
-release=0
+release=1
 source=(https://dev.alpinelinux.org/archive/android-fonts/android-fonts-4.2.2_r1.2.tar.gz \
 	http://www.cosmix.org/software/files/DroidSansMonoSlashed.zip \
 	http://www.cosmix.org/software/files/DroidSansMonoDotted.zip \
