@@ -184,7 +184,7 @@ f:a8c9e165423cd937980f1f10f8b6e779:font-util/.md5sum
 f:16c832c0b2b728ca2ca05696954a5263:font-util/Pkgfile
 f:ff55d6e8c0036bd70af415800d25e8aa:font-util/.footprint
 f:8612b3514765267f1921c76873fba570:libxcb/.md5sum
-f:d6c6c19a5e734ddeba86a457614b0d3a:libxcb/Pkgfile
+f:24bf2dcb240cba6cc4b25cbcf1d6941a:libxcb/Pkgfile
 f:f3fb975b6029df3109a905a170a357ce:libxcb/.footprint
 f:b9ca6de00cf85da80a35259c47a551ba:libxkbcommon/.md5sum
 f:79a9ea0aa4a2daa0916e5a40f8ca1da1:libxkbcommon/Pkgfile
@@ -297,9 +297,9 @@ f:cd7f6b8871c9cdc102909889a8434d92:xorgproto/.footprint
 f:ff202bac3591427a8a7f51fab55bd879:libxcursor/.md5sum
 f:45a7cc5f4ad51411b3692711fc5d0e6a:libxcursor/Pkgfile
 f:0e295fc2c9f7021bb140f5a6d0772676:libxcursor/.footprint
-f:abd66730642ca0bcd0ad9a6e264fbd71:xcb-proto/.md5sum
-f:796de1ec05536ffa2260c6ae3abcee0a:xcb-proto/Pkgfile
-f:f98b1e685552f1031c62c3d9557326c6:xcb-proto/.footprint
+f:1ac605c1ccab145df07d0047cd13439c:xcb-proto/.md5sum
+f:e42ad7b4e8decc215526d0fbfab69320:xcb-proto/Pkgfile
+f:7b73795b67ce3f8dbc39980ec6c141b9:xcb-proto/.footprint
 f:13cf6738c710cfceebea2a79b4e922fe:libxdamage/.md5sum
 f:e68ec72d4093fe9e9c32d7e045f0e8ef:libxdamage/Pkgfile
 f:70507b9470c876f0223c9a432a5677ed:libxdamage/.footprint
