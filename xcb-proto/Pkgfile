@@ -4,13 +4,14 @@
 # Depends on:	python3
 
 name=xcb-proto
-version=1.14
+version=1.14.1
 release=0
-source=(https://xcb.freedesktop.org/dist/${name}-${version}.tar.xz)
+source=(https://xorg.freedesktop.org/archive/individual/proto/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
+	PYTHON=/usr/bin/python3 \
 	./configure \
 		--prefix=/usr
 
