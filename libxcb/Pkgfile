@@ -5,16 +5,21 @@
 
 name=libxcb
 version=1.14
-release=0
-source=(https://xcb.freedesktop.org/dist/${name}-${version}.tar.xz)
+release=1
+source=(https://xorg.freedesktop.org/archive/individual/lib/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
+	# use make check add string
+	#CFLAGS="${CFLAGS:--O2 -g} -Wno-error=format-extra-args" \
+	PYTHON=/usr/bin/python3 \
 	./configure \
 		--prefix=/usr
 
 	make
+
+	#make check
 
 	make DESTDIR=$PKG install
 
