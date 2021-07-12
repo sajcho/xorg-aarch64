@@ -4,8 +4,8 @@
 # Depends on:	elfutils libglvnd libva libvdpau llvm-toolchain python3-mako wayland-protocols libxdamage libxrandr libxshmfence libxxf86vm
 
 name=mesa
-version=20.3.0
-release=1
+version=21.1.4
+release=0
 source=(https://mesa.freedesktop.org/archive/${name}-${version}.tar.xz)
 
 build() {
@@ -18,23 +18,25 @@ build() {
 		-Dgles1=disabled \
 		-Dgles2=enabled \
 		-Ddri3=enabled \
+		-Dopengl=true \
 		-Ddri-drivers=nouveau \
 		-Degl=enabled \
 		-Dglvnd=true \
 		-Dglx=dri \
-		-Dosmesa=gallium \
-		-Dgallium-va=enabled \
+		-Dosmesa=true \
 		-Dgallium-vdpau=enabled \
+		-Dgallium-va=enabled \
 		-Dgallium-xa=disabled \
 		-Dgallium-xvmc=disabled \
 		-Dgallium-nine=false \
 		-Dgallium-extra-hud=false \
-		-Dgallium-drivers=swrast,nouveau,tegra \
+		-Dgallium-drivers=swrast,nouveau,tegra,etnaviv,kmsro,lima,panfrost,v3d,vc4 \
 		-Dshared-glapi=enabled \
 		-Dvulkan-drivers= \
 		-Dlibunwind=disabled \
 		-Dlmsensors=disabled \
 		-Dvalgrind=disabled \
+		-Dmicrosoft-clc=disabled \
 		. build
 
 	meson configure build
