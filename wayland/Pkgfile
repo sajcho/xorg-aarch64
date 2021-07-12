@@ -4,8 +4,8 @@
 # Depends on:	libxml2 meson
 
 name=wayland
-version=1.18.0
-release=1
+version=1.19.0
+release=0
 source=(https://wayland.freedesktop.org/releases/${name}-${version}.tar.xz \
 	tests-ignore-debugger.patch)
 
@@ -14,13 +14,13 @@ build() {
 
 	patch -p1 -i $SRC/tests-ignore-debugger.patch
 
-	./configure \
-		--prefix=/usr \
-		--disable-documentation
+	build-meson \
+		-Ddocumentation=false \
+		. build
 
-	make
+	meson compile ${JOBS:+-j ${JOBS}} -C build
 
-	make check WAYLAND_TEST_IGNORE_DEBUGGER=1
+	WAYLAND_TEST_IGNORE_DEBUGGER=1 meson test -C build
 
-	make DESTDIR=$PKG install
+	DESTDIR=$PKG meson install --no-rebuild -C build
 }
