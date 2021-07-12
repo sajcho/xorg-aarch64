@@ -4,7 +4,7 @@
 # Depends on:	intltool xkbcomp
 
 name=xkeyboard-config
-version=2.30
+version=2.33
 release=0
 source=(https://www.x.org/releases/individual/data/${name}/${name}-${version}.tar.bz2)
 
@@ -23,5 +23,6 @@ build() {
 	make DESTDIR=$PKG install
 
 	ln -s /var/lib/xkb $PKG/usr/share/X11/xkb/compiled
+
 	find $PKG -name README -delete
 }
