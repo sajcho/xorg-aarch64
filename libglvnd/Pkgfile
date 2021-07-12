@@ -4,10 +4,9 @@
 # Depends on:	libxext
 
 name=libglvnd
-version=1.3.2
+version=1.3.3
 release=0
-source=(https://github.com/NVIDIA/${name}/archive/v${version}/${name}-${version}.tar.gz \
-	eglplatform.h)
+source=(https://github.com/NVIDIA/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
@@ -19,7 +18,4 @@ build() {
 	meson compile ${JOBS:+-j ${JOBS}} -C build
 
 	DESTDIR=$PKG meson install --no-rebuild -C build
-
-	# replace EGL/eglplatform.h with the newer mesa version
-	install -m 0644 $SRC/eglplatform.h $PKG/usr/include/EGL/
 }
