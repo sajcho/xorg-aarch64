@@ -4,7 +4,7 @@
 # Depends on:	mesa
 
 name=glu
-version=9.0.1
+version=9.0.2
 release=0
 source=(https://archive.mesa3d.org/${name}/${name}-${version}.tar.xz)
 
