@@ -4,19 +4,21 @@
 # Depends on:	mesa
 
 name=libepoxy
-version=1.5.4
-release=1
+version=1.5.8
+release=0
 source=(https://github.com/anholt/libepoxy/releases/download/${version}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
-	autoreconf -vif
+	build-meson \
+		-Degl=yes \
+		-Dglx=yes \
+		-Dx11=true \
+		-Ddocs=false \
+		. build
 
-	./configure \
-		--prefix=/usr \
+	meson compile ${JOBS:+-j ${JOBS}} -C build
 
-	make
-
-	make DESTDIR=$PKG install
+	DESTDIR=$PKG meson install --no-rebuild -C build
 }
