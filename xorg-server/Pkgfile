@@ -5,11 +5,21 @@
 
 name=xorg-server
 version=1.20.12
-release=0
-source=(https://xorg.freedesktop.org/releases/individual/xserver/${name}-${version}.tar.xz)
+release=1
+source=(https://xorg.freedesktop.org/releases/individual/xserver/${name}-${version}.tar.xz \
+	0001-Fix-segfault-on-probing-a-non-PCI-platform-device-on.patch \
+	0001-v2-FS-58644.patch \
+	0002-fix-libshadow-2.patch \
+	xserver-autobind-hotplug.patch)
 
 build() {
 	cd ${name}-${version}
+
+	# from archlinuxarm
+	patch -Np1 -i $SRC/0001-Fix-segfault-on-probing-a-non-PCI-platform-device-on.patch
+	patch -Np1 -i $SRC/0001-v2-FS-58644.patch
+	patch -Np1 -i $SRC/0002-fix-libshadow-2.patch
+	patch -Np1 -i $SRC/xserver-autobind-hotplug.patch
 
 	_fontroot="/usr/share/fonts"
 
