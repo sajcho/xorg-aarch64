@@ -284,9 +284,13 @@ f:4b460e71f0de699222080fb0e2f2f409:font-bh-75dpi/.md5sum
 f:ceca573497f04873fdd8012e19443382:font-bh-75dpi/post-install
 f:01a58457011c24b00af41f535e0b320d:font-bh-75dpi/Pkgfile
 f:4a2b8e691aecdf63c1c636cf671c63b3:font-bh-75dpi/.footprint
-f:a3a3a6a981e7453cde7355beb204ff1c:xorg-server/.md5sum
+f:5510c255cfba956ae671d34dbefd7415:xorg-server/.md5sum
 f:73932869961838e0409fbbff9e83c979:xorg-server/README
-f:a4142fdc196d7d53dd24232e1499209a:xorg-server/Pkgfile
+f:9fa0cd55ac49a2c63ade15b217e69dd9:xorg-server/0001-Fix-segfault-on-probing-a-non-PCI-platform-device-on.patch
+f:c359044d9993e01181b08f6c33596019:xorg-server/Pkgfile
+f:dbb61cbc7faa4b8813f808e8b8d136e6:xorg-server/xserver-autobind-hotplug.patch
+f:5e263e1c42bc24fbdc1f9da4b7a62ee9:xorg-server/0001-v2-FS-58644.patch
+f:4caf8b16eefef45aceeb9b6ffea12f81:xorg-server/0002-fix-libshadow-2.patch
 f:eedadbc4752ec81d0494fc6cbece045a:xorg-server/.footprint
 f:40c13ce40d0bd0862b1202f5e333fef6:xorgproto/.md5sum
 f:f07044525f15e7df7085d829f8b01c7a:xorgproto/Pkgfile
