@@ -103,6 +103,7 @@ d:rgb
 d:eglexternalplatform
 d:encodings
 d:glu
+d:xcb-util-errors
 d:xf86-input-synaptics
 d:setxkbmap
 d:xinput
@@ -477,6 +478,9 @@ f:49bb3212d62f46d63c2266d483917985:encodings/.footprint
 f:96bb9b903db23a2d31619c6082e0a552:glu/.md5sum
 f:321e1a11c50cb2d6fd4f8e66f01a2c19:glu/Pkgfile
 f:0308cfbe3598d26edbbc2d93435d3014:glu/.footprint
+f:cc6e2ffe51ac8ee6e96bccad5a4ba4cb:xcb-util-errors/.md5sum
+f:c880b58b956d9551053d3e502f68ee9a:xcb-util-errors/Pkgfile
+f:379d068d500ebee7404d77b80cf483c0:xcb-util-errors/.footprint
 f:4582b822c580fd9bc04262d5ff9da65f:xf86-input-synaptics/.md5sum
 f:025d6ca06205b7b9d5ca8c6fc4176a6c:xf86-input-synaptics/Pkgfile
 f:6b6366e60e4bf2da98a99bcae8868bbd:xf86-input-synaptics/time64.patch
