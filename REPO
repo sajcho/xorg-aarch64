@@ -34,6 +34,7 @@ d:libxmu
 d:libxaw
 d:font-bitstream-type1
 d:font-bh-ttf
+d:wayland-utils
 d:xf86-video-vesa
 d:libxi
 d:font-bitstream-75dpi
@@ -77,6 +78,7 @@ d:xprop
 d:xmodmap
 d:mesa
 d:font-dejavu-ttf
+d:libxpresent
 d:bdftopcf
 d:xcb-util-renderutil
 d:libxpm
@@ -241,6 +243,9 @@ f:b475f910f76c22a7dcf1b936e72f7a61:font-bh-ttf/.md5sum
 f:331fb0a442cbd867428a6f167bf75ea2:font-bh-ttf/post-install
 f:d09bb6b260c231492715fd3e91cc4ae7:font-bh-ttf/Pkgfile
 f:179269a69ad31362f636e2f27ca2804a:font-bh-ttf/.footprint
+f:216de4b1aeac712430b825e0a5a11fea:wayland-utils/.md5sum
+f:377bc66dcb2401c3031832f1fea29d7d:wayland-utils/Pkgfile
+f:94473065047297801f9bc9ac97239167:wayland-utils/.footprint
 f:28f03d24ccdd346b42782f84790e99ad:xf86-video-vesa/.md5sum
 f:0d117fd416a7ed92fd1aaf4955a92004:xf86-video-vesa/Pkgfile
 f:eabbde8bea29dc756e74ae18190447e2:xf86-video-vesa/.footprint
@@ -393,6 +398,9 @@ f:331fb0a442cbd867428a6f167bf75ea2:font-dejavu-ttf/post-install
 f:e536ece6ce3d2beec9376ae7ec7bcfd4:font-dejavu-ttf/90-tt-dejavu.conf
 f:0809cc9c53b7234588e057cf0991941f:font-dejavu-ttf/Pkgfile
 f:fa82e34d97a9c0e8cd5d4f33235f013b:font-dejavu-ttf/.footprint
+f:ca35b3920d4a5def6c0d4023b4420a4e:libxpresent/.md5sum
+f:964d5354f7b5d539af3f41df67d29cfd:libxpresent/Pkgfile
+f:5ac68fb48b0b8ca7b9d09ea17c44af2c:libxpresent/.footprint
 f:fd34b35f787d8df0fc88eaf32f5fd721:bdftopcf/.md5sum
 f:b8c92745de9cda6c21c42d727d57c48c:bdftopcf/Pkgfile
 f:ee4805600949a9e75e2ff0f839e54782:bdftopcf/.footprint
