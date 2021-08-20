@@ -4,7 +4,7 @@
 # Depends on:	elfutils libglvnd libva libvdpau llvm-toolchain python3-mako wayland-protocols libxdamage libxrandr libxshmfence libxxf86vm
 
 name=mesa
-version=21.1.4
+version=21.2.1
 release=0
 source=(https://mesa.freedesktop.org/archive/${name}-${version}.tar.xz)
 
