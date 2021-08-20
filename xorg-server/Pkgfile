@@ -4,8 +4,8 @@
 # Depends on:	bdftopcf egl-wayland font-util libdmx libepoxy libxaw libxcomposite libxcursor libxfont2 libxft libxinerama libxkbfile libxres libxtst libxxf86dga mkfontscale nettle xcb-util-keysyms xcb-util-wm xcb-util-xrm xcb-util-cursor
 
 name=xorg-server
-version=1.20.12
-release=1
+version=1.20.13
+release=0
 source=(https://xorg.freedesktop.org/releases/individual/xserver/${name}-${version}.tar.xz \
 	0001-Fix-segfault-on-probing-a-non-PCI-platform-device-on.patch \
 	0001-v2-FS-58644.patch \
