@@ -4,12 +4,13 @@
 # Depends on:	encodings fontconfig font-util gettext meson
 
 name=font-cantarell-otf
-version=0.201
-release=1
-source=(https://download.gnome.org/sources/cantarell-fonts/${version}/cantarell-fonts-${version}.tar.xz)
+_realname=cantarell-fonts
+version=0.301
+release=0
+source=(https://download.gnome.org/sources/${_realname}/${version}/${_realname}-${version}.tar.xz)
 
 build() {
-	cd cantarell-fonts-${version}
+	cd ${_realname}-${version}
 
 	build-meson \
 		-Dfontsdir=/usr/share/fonts/otf \
