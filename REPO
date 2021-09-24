@@ -88,6 +88,7 @@ d:xkbcomp
 d:xcb-util-keysyms
 d:xmag
 d:xcursor-neutral
+d:xsel
 d:wayland-protocols
 d:xf86-input-keyboard
 d:font-droid-ttf
@@ -429,6 +430,9 @@ f:e65407e7277f831ed22f8414cfc69e6d:xmag/.footprint
 f:4fd2a0cf9fc210257ef261e150bf0905:xcursor-neutral/.md5sum
 f:bc5b40a020b53bb938d0845d716026ef:xcursor-neutral/Pkgfile
 f:4d1da8c3d69c709ea6411b9dc8e4772d:xcursor-neutral/.footprint
+f:7ccca06095b40d28d12ed4c0c930dc1b:xsel/.md5sum
+f:50fe5367aad0faa15bff1294a712733f:xsel/Pkgfile
+f:5bd3b783769db8a7226a698487b93ffe:xsel/.footprint
 f:64db5751a0f93b8e2654657383be95fd:wayland-protocols/.md5sum
 f:17617ad8ba47611a646aa9f52b8a447d:wayland-protocols/Pkgfile
 f:e67bc80f1cdee0fb6404902cd0825bc6:wayland-protocols/.footprint
