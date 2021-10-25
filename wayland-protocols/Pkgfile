@@ -4,7 +4,7 @@
 # Depends on:	wayland
 
 name=wayland-protocols
-version=1.21
+version=1.23
 release=0
 source=(https://wayland.freedesktop.org/releases/${name}-${version}.tar.xz)
 
