@@ -5,7 +5,7 @@
 
 name=wayland
 version=1.19.0
-release=0
+release=1
 source=(https://wayland.freedesktop.org/releases/${name}-${version}.tar.xz \
 	tests-ignore-debugger.patch)
 
@@ -18,9 +18,7 @@ build() {
 		-Ddocumentation=false \
 		. build
 
-	meson compile ${JOBS:+-j ${JOBS}} -C build
-
-	WAYLAND_TEST_IGNORE_DEBUGGER=1 meson test -C build
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
 
 	DESTDIR=$PKG meson install --no-rebuild -C build
 }
