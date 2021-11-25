@@ -4,8 +4,8 @@
 
 name=eglexternalplatform
 version=1.1
-release=0
-source=(https://github.com/NVIDIA/${name}/archive/refs/tags/${version}.tar.gz)
+release=1
+source=(https://github.com/NVIDIA/${name}/archive/${version}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
