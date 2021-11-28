@@ -5,10 +5,13 @@
 
 name=xinit
 version=1.4.1
-release=1
+release=2
 source=(https://www.x.org/releases/individual/app/${name}-${version}.tar.bz2 \
 	06_move_serverauthfile_into_tmp.patch \
-	Xsession xinitrc xsession.skel xserverrc)
+	Xsession \
+	xinitrc \
+	xsession.skel \
+	xserverrc)
 
 build() {
 	cd ${name}-${version}
@@ -21,7 +24,7 @@ build() {
 		--localstatedir=/var \
 		--with-xinitdir=/etc/X11/xinit
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
