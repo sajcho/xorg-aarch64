@@ -5,18 +5,16 @@
 
 name=xauth
 version=1.1
-release=1
+release=2
 source=(https://www.x.org/releases/individual/app/${name}-${version}.tar.bz2)
 
 build() {
 	cd ${name}-${version}
 
 	./configure \
-		--prefix=/usr \
-		--sysconfdir=/etc \
-		--localstatedir=/var
+		--prefix=/usr
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 }
