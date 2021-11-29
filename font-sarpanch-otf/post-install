@@ -2,4 +2,4 @@
 
 mkfontdir /usr/share/fonts/otf
 mkfontscale /usr/share/fonts/otf
-fc-cache
+fc-cache --system-only > /dev/null
