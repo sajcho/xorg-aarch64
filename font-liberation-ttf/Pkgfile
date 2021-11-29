@@ -4,10 +4,10 @@
 # Depends on:	encodings fontconfig font-util
 
 name=font-liberation-ttf
-version=2.00.5
+version=2.1.5
 _narrowver=1.07.6
 release=1
-source=(https://github.com/liberationfonts/liberation-fonts/files/2926169/liberation-fonts-ttf-${version}.tar.gz \
+source=(https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-${version}.tar.gz \
 	https://github.com/liberationfonts/liberation-sans-narrow/files/2579431/liberation-narrow-fonts-ttf-$_narrowver.tar.gz \
 	30-liberation-mono.conf \
 	30-liberation-sans-narrow.conf \
