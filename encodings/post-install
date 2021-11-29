@@ -4,3 +4,4 @@ mkfontdir /usr/share/fonts/encodings/large
 mkfontscale /usr/share/fonts/encodings/large
 mkfontdir /usr/share/fonts/encodings
 mkfontscale /usr/share/fonts/encodings
+fc-cache --system-only > /dev/null
