@@ -12,16 +12,13 @@ build() {
 	cd ${name}-${version}
 
 	./configure \
-		--build=aarch64-unknown-linux-gnu \
+		--build=$CHOST \
 		--prefix=/usr \
 		--with-fontdir=/usr/share/fonts/misc
 
-	make
+	make V=1
 
-	make -j1 \
-		DESTDIR=$PKG \
-		MKFONTDIR=: \
-		MKFONTSCALE=: \
-		FCCACHE=: \
-		install
+	make -j1 DESTDIR=$PKG install
+
+	rm $PKG/usr/share/fonts/misc/fonts.dir
 }
