@@ -12,11 +12,11 @@ build() {
 	cd ${name}-${version}
 
 	./configure \
-		--build=aarch64-unknown-linux-gnu \
+		--build=$CHOST \
 		--prefix=/usr \
 		--with-fontdir=/usr/share/fonts/truetype
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
