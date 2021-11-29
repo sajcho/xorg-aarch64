@@ -4,19 +4,24 @@
 # Depends on:	xorg-server
 
 name=xf86-video-nouveau
-version=1.0.16
-release=0
-source=(https://www.x.org/archive/individual/driver/${name}-${version}.tar.bz2)
+version=1.0.17
+release=1
+source=(https://www.x.org/archive/individual/driver/${name}-${version}.tar.bz2 \
+	xorg-abi.patch)
 
 build() {
 	cd ${name}-${version}
+
+	patch -p1 -i $SRC/xorg-abi.patch
 
 	export LDFLAGS="$LDFLAGS -Wl,-z,lazy"
 
 	./configure \
 		--prefix=/usr
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
