@@ -3,6 +3,7 @@ drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/X11/
 drwxr-xr-x	root/root	usr/share/X11/xkb/
 drwxr-xr-x	root/root	usr/share/X11/xkb/compat/
+-rw-r--r--	root/root	usr/share/X11/xkb/compat/Makefile.in
 -rw-r--r--	root/root	usr/share/X11/xkb/compat/accessx
 -rw-r--r--	root/root	usr/share/X11/xkb/compat/basic
 -rw-r--r--	root/root	usr/share/X11/xkb/compat/caps
@@ -23,6 +24,7 @@ drwxr-xr-x	root/root	usr/share/X11/xkb/compat/
 -rw-r--r--	root/root	usr/share/X11/xkb/compat/xtest
 lrwxrwxrwx	root/root	usr/share/X11/xkb/compiled -> /var/lib/xkb
 drwxr-xr-x	root/root	usr/share/X11/xkb/geometry/
+-rw-r--r--	root/root	usr/share/X11/xkb/geometry/Makefile.in
 -rw-r--r--	root/root	usr/share/X11/xkb/geometry/amiga
 -rw-r--r--	root/root	usr/share/X11/xkb/geometry/ataritt
 -rw-r--r--	root/root	usr/share/X11/xkb/geometry/chicony
@@ -56,6 +58,7 @@ drwxr-xr-x	root/root	usr/share/X11/xkb/geometry/sgi_vndr/
 -rw-r--r--	root/root	usr/share/X11/xkb/geometry/typematrix
 -rw-r--r--	root/root	usr/share/X11/xkb/geometry/winbook
 drwxr-xr-x	root/root	usr/share/X11/xkb/keycodes/
+-rw-r--r--	root/root	usr/share/X11/xkb/keycodes/Makefile.in
 -rw-r--r--	root/root	usr/share/X11/xkb/keycodes/aliases
 -rw-r--r--	root/root	usr/share/X11/xkb/keycodes/amiga
 -rw-r--r--	root/root	usr/share/X11/xkb/keycodes/ataritt
@@ -93,6 +96,7 @@ lrwxrwxrwx	root/root	usr/share/X11/xkb/rules/xorg -> base
 lrwxrwxrwx	root/root	usr/share/X11/xkb/rules/xorg.lst -> base.lst
 lrwxrwxrwx	root/root	usr/share/X11/xkb/rules/xorg.xml -> base.xml
 drwxr-xr-x	root/root	usr/share/X11/xkb/symbols/
+-rw-r--r--	root/root	usr/share/X11/xkb/symbols/Makefile.in
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/af
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/al
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/altwin
@@ -300,6 +304,7 @@ drwxr-xr-x	root/root	usr/share/X11/xkb/symbols/xfree68_vndr/
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/xfree68_vndr/ataritt
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/za
 drwxr-xr-x	root/root	usr/share/X11/xkb/types/
+-rw-r--r--	root/root	usr/share/X11/xkb/types/Makefile.in
 -rw-r--r--	root/root	usr/share/X11/xkb/types/basic
 -rw-r--r--	root/root	usr/share/X11/xkb/types/cancel
 -rw-r--r--	root/root	usr/share/X11/xkb/types/caps
@@ -317,3 +322,6 @@ drwxr-xr-x	root/root	usr/share/man/man7/
 -rw-r--r--	root/root	usr/share/man/man7/xkeyboard-config.7.gz
 drwxr-xr-x	root/root	usr/share/pkgconfig/
 -rw-r--r--	root/root	usr/share/pkgconfig/xkeyboard-config.pc
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/lib/
+drwxr-xr-x	root/root	var/lib/xkb/

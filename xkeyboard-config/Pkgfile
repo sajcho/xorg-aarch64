@@ -5,24 +5,27 @@
 
 name=xkeyboard-config
 version=2.34
-release=1
+release=2
 source=(https://www.x.org/releases/individual/data/${name}/${name}-${version}.tar.bz2)
 
 build() {
 	cd ${name}-${version}
 
-	./configure \
-		--prefix=/usr \
-		--disable-nls \
-		--with-xkb-base=/usr/share/X11/xkb \
-		--with-xkb-rules-symlink=xorg \
-		--enable-compat-rules=yes
+	build-meson \
+		-Dcompat-rules=true \
+		-Dxorg-rules-symlinks=true \
+		-Dxkb-base=/usr/share/X11/xkb \
+		. build
 
-	make -j1 V=1
+	meson configure build
 
-	make DESTDIR=$PKG install
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
 
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	install -m 0755 -d $PKG/var/lib/xkb
 	ln -s /var/lib/xkb $PKG/usr/share/X11/xkb/compiled
 
+	rm -r $PKG/usr/share/locale
 	find $PKG -name README -delete
 }
