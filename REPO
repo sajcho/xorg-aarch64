@@ -66,6 +66,7 @@ d:xauth
 d:xtrans
 d:xcb-util-xrm
 d:libepoxy
+d:xwayland
 d:font-adobe-utopia-75dpi
 d:xorg
 d:font-cursor-misc
@@ -182,8 +183,8 @@ f:a01d43319c3abac796e99812975bf0a1:font-liberation-ttf/30-liberation-sans-narrow
 f:bda9b7b1c25aa27c224f254c3b7d672d:font-liberation-ttf/30-liberation-sans.conf
 f:8b1fe97bb6ebefaa1d2c502f6313f875:font-liberation-ttf/.footprint
 f:6613bd7b5126c54337c65e0b017b5b15:xkeyboard-config/.md5sum
-f:198104c0f1735e7346eb8d5d7029a6e9:xkeyboard-config/Pkgfile
-f:177b0aaded5d8e95eb014988ece0bc9f:xkeyboard-config/.footprint
+f:dfb9a83ef350089a0f9cf8e15899bfdc:xkeyboard-config/Pkgfile
+f:3aee672fa4db037f3b9a596d591fbddf:xkeyboard-config/.footprint
 f:35468438f991deac23417a71b3f42569:libfontenc/.md5sum
 f:9d4bf1108d0e07393f505cff710d5397:libfontenc/Pkgfile
 f:e40d0104f51b0db4213acd18adaa6664:libfontenc/.footprint
@@ -290,7 +291,7 @@ f:f1896af4cf29e2d1effc7f1af466ba02:libxtst/Pkgfile
 f:a09d5bd6ee610e4084384b69da131d36:libxtst/.footprint
 f:b1ae484017f9d7eb0f7cb27b143fd28a:libglvnd/.md5sum
 f:fc4e8fa795049bb23c7abdf20b139c0b:libglvnd/0001-glx-Add-another-fallback-library-name.patch
-f:450fb54b3f1afb70337ca52ab7f9d22c:libglvnd/Pkgfile
+f:5b3ac25c4806b9a184afad8319d89df3:libglvnd/Pkgfile
 f:4dc8ac7532a91174da825fc60ff8535e:libglvnd/.footprint
 f:4b460e71f0de699222080fb0e2f2f409:font-bh-75dpi/.md5sum
 f:1358db63f2f0db6708bee3c46bef7232:font-bh-75dpi/post-install
@@ -355,6 +356,9 @@ f:6d49fa62393b23f26282e43c40361e81:xcb-util-xrm/.footprint
 f:749c2cf56ee515c0ff6a102fb9f25d94:libepoxy/.md5sum
 f:ad28362079789ea7dc9680ab84af4d70:libepoxy/Pkgfile
 f:355627de0939db078b6d02b584098c6d:libepoxy/.footprint
+f:aba59100df7568f579eb84c5a2681738:xwayland/.md5sum
+f:d063a5a0dda82fcafbac54b21bf130d2:xwayland/Pkgfile
+f:679bc6fc8856e67c7efa164fd3439768:xwayland/.footprint
 f:212039ddcde1a92e90c7d8ee152e6429:font-adobe-utopia-75dpi/.md5sum
 f:1358db63f2f0db6708bee3c46bef7232:font-adobe-utopia-75dpi/post-install
 f:1cf91a382d00a33c3a95f9abf7930c4c:font-adobe-utopia-75dpi/Pkgfile
@@ -366,10 +370,11 @@ f:b91ace716b126c11eb7fc1364ac81093:font-cursor-misc/.md5sum
 f:612d8ef86da59bd77de99c5bd6d09151:font-cursor-misc/post-install
 f:60f1ed125d03c77fb000e72d8fc5a6e3:font-cursor-misc/Pkgfile
 f:b19b9ebdddb79a8e9ebb20ed71d420f3:font-cursor-misc/.footprint
-f:9563535774d1723c1d6bfb8b61b831b1:font-terminus-x11/.md5sum
+f:a7025684148911610330e99a5c1b219b:font-terminus-x11/.md5sum
 f:612d8ef86da59bd77de99c5bd6d09151:font-terminus-x11/post-install
-f:dfbb2855d2206c3a94b1abffd6f6ad31:font-terminus-x11/Pkgfile
-f:ab124849ec8aef270a66d82eb52d7344:font-terminus-x11/.footprint
+f:e1cc5010db67b179f71722d4882214fd:font-terminus-x11/Pkgfile
+f:dd9fe762af012c731c866ee9d29e09f0:font-terminus-x11/fix-75-yes-terminus.patch
+f:dbc412d0da411b0e2a79c04f26c6c3a7:font-terminus-x11/.footprint
 f:516cf859b0ef69f7ed7cfaa02c5833d5:xf86-input-libinput/.md5sum
 f:e67abcd8d2aaaafbde2842b069bc6f92:xf86-input-libinput/Pkgfile
 f:3396839a50eb2af05fd7221695f05809:xf86-input-libinput/.footprint
