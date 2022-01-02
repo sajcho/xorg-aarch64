@@ -4,15 +4,12 @@
 # Depends on:	bdftopcf egl-wayland font-util libdmx libepoxy libxaw libxcomposite libxcursor libxcvt libxfont2 libxft libxinerama libxkbfile libxres libxtst libxxf86dga mkfontscale nettle xcb-util-keysyms xcb-util-wm xcb-util-xrm xcb-util-cursor
 
 name=xorg-server
-version=21.1.1
+version=21.1.2
 release=1
-source=(https://www.x.org/releases/individual/xserver/${name}-${version}.tar.xz \
-	0001_revert_dpi_calculation.patch)
+source=(https://www.x.org/releases/individual/xserver/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
-
-	patch -Rp1 -i $SRC/0001_revert_dpi_calculation.patch
 
 	_fontroot="/usr/share/fonts"
 
