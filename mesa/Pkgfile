@@ -4,7 +4,7 @@
 # Depends on:	elfutils libglvnd libva libvdpau llvm-toolchain python3-mako wayland-protocols libxdamage libxrandr libxshmfence libxxf86vm
 
 name=mesa
-version=21.3.4
+version=21.3.5
 release=1
 source=(https://mesa.freedesktop.org/archive/${name}-${version}.tar.xz)
 
@@ -32,7 +32,8 @@ build() {
 		-Dgallium-extra-hud=false \
 		-Dgallium-drivers=swrast,nouveau,tegra,etnaviv,kmsro,lima,panfrost,v3d,vc4 \
 		-Dshared-glapi=enabled \
-		-Dvulkan-drivers= \
+		-Dvulkan-drivers=swrast,broadcom,panfrost \
+		-Dvulkan-layers=device-select,overlay \
 		-Dlibunwind=disabled \
 		-Dlmsensors=disabled \
 		-Dvalgrind=disabled \
