@@ -5,14 +5,15 @@
 
 name=xorg-server
 version=21.1.3
-release=2
-source=(https://www.x.org/releases/individual/xserver/${name}-${version}.tar.xz)
+release=3
+source=(https://www.x.org/releases/individual/xserver/${name}-${version}.tar.xz \
+	upstream.patches)
 
 build() {
 	cd ${name}-${version}
 
-	CFLAGS+=" -Wno-error=array-bounds"
-	CXXFLAGS+=" -Wno-error=array-bounds"
+	# upstream patches
+	patch -p1 -i $SRC/upstream.patches
 
 	_fontroot="/usr/share/fonts"
 
