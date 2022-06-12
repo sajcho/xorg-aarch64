@@ -43,8 +43,6 @@ drwxr-xr-x	root/root	usr/include/libdrm/nouveau/nvif/
 -rw-r--r--	root/root	usr/include/libdrm/via_drm.h
 -rw-r--r--	root/root	usr/include/libdrm/virtgpu_drm.h
 -rw-r--r--	root/root	usr/include/libdrm/vmwgfx_drm.h
-drwxr-xr-x	root/root	usr/include/libkms/
--rw-r--r--	root/root	usr/include/libkms/libkms.h
 -rw-r--r--	root/root	usr/include/libsync.h
 drwxr-xr-x	root/root	usr/include/omap/
 -rw-r--r--	root/root	usr/include/omap/omap_drm.h
@@ -72,9 +70,6 @@ lrwxrwxrwx	root/root	usr/lib/libdrm_omap.so.1 -> libdrm_omap.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libdrm_tegra.so -> libdrm_tegra.so.0
 lrwxrwxrwx	root/root	usr/lib/libdrm_tegra.so.0 -> libdrm_tegra.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libdrm_tegra.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/libkms.so -> libkms.so.1
-lrwxrwxrwx	root/root	usr/lib/libkms.so.1 -> libkms.so.1.0.0
--rwxr-xr-x	root/root	usr/lib/libkms.so.1.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libdrm.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libdrm_etnaviv.pc
@@ -84,4 +79,3 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libdrm_omap.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libdrm_tegra.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libdrm_vc4.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/libkms.pc
