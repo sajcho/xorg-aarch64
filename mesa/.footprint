@@ -47,11 +47,10 @@ drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/tegra_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/v3d_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/vc4_dri.so
-lrwxrwxrwx	root/root	usr/lib/libEGL_mesa.so -> libEGL_mesa.so.0
+-rwxr-xr-x	root/root	usr/lib/dri/zink_dri.so
 lrwxrwxrwx	root/root	usr/lib/libEGL_mesa.so.0 -> libEGL_mesa.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libEGL_mesa.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/libGLX_indirect.so.0 -> libGLX_mesa.so.0
-lrwxrwxrwx	root/root	usr/lib/libGLX_mesa.so -> libGLX_mesa.so.0
+lrwxrwxrwx	root/root	usr/lib/libGLX_indirect.so.0 -> /usr/lib/libGLX_mesa.so.0
 lrwxrwxrwx	root/root	usr/lib/libGLX_mesa.so.0 -> libGLX_mesa.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libGLX_mesa.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libOSMesa.so -> libOSMesa.so.8
@@ -73,7 +72,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gbm.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/osmesa.pc
 drwxr-xr-x	root/root	usr/lib/vdpau/
-lrwxrwxrwx	root/root	usr/lib/vdpau/libvdpau_nouveau.so -> libvdpau_nouveau.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/vdpau/libvdpau_nouveau.so.1 -> libvdpau_nouveau.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/vdpau/libvdpau_nouveau.so.1.0 -> libvdpau_nouveau.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/vdpau/libvdpau_nouveau.so.1.0.0
