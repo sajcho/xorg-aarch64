@@ -4,10 +4,10 @@ d:glslang
 f:8fd90235cdbcafdbcf38a6c99a1c8d39:xorg-server/.md5sum
 f:e9c48b96b3fbf77c8428d0c02b23f9e3:xorg-server/Pkgfile
 f:89219c1b376b9692dfd26154bf83395c:xorg-server/.footprint
-f:6367d814bbeb5b80d22320be31fd5856:mesa/.md5sum
+f:576ff9d535ace4ea40dfb4feab6673c1:mesa/.md5sum
 f:1380f1a039d4b6ad201300923ceb7c57:mesa/README
-f:4ef0ad70f98ba28cfba92dcd218f81f5:mesa/Pkgfile
-f:2bdcf3b05473f39496e53c33d25227d8:mesa/.footprint
+f:1fff629e9408269afd699b88caec3cd7:mesa/Pkgfile
+f:ca82cf2b778fcc0d421da1860506b26c:mesa/.footprint
 f:6f2b2ac016af8d43556d32c947b45c5a:glslang/.md5sum
 f:a719fe8a7cd601bc20ae23838f81f6da:glslang/Pkgfile
 f:253f0b273437e24084de3451a4c88064:glslang/.footprint
