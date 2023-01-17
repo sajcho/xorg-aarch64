@@ -1,9 +1,9 @@
 d:xorg-server
 d:mesa
-f:7222f099d995a1f974b5c638da097d14:xorg-server/Pkgfile
-f:591fa8cc214c1f6734d657eb9087d2d1:xorg-server/.signature
+f:b4a8fc84eca4309ea73985426fb91bee:xorg-server/Pkgfile
+f:381319d8456a9007968d829defc9a779:xorg-server/.signature
 f:89219c1b376b9692dfd26154bf83395c:xorg-server/.footprint
 f:1380f1a039d4b6ad201300923ceb7c57:mesa/README
-f:21922b5d0a6ecccd82cbe09c9f0c0b65:mesa/Pkgfile
-f:0f03ccf39a6b947c6108b8ad6900f23f:mesa/.signature
-f:ca82cf2b778fcc0d421da1860506b26c:mesa/.footprint
+f:c851715d6ce66bca62d4bf5e79662845:mesa/Pkgfile
+f:ecdaed03f8d03a2c228fc48f041355eb:mesa/.signature
+f:a46d98c67dbc31a01eed55f08cf0e8f9:mesa/.footprint
