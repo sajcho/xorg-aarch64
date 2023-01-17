@@ -1,6 +1,5 @@
 d:xorg-server
 d:mesa
-d:glslang
 f:7222f099d995a1f974b5c638da097d14:xorg-server/Pkgfile
 f:591fa8cc214c1f6734d657eb9087d2d1:xorg-server/.signature
 f:89219c1b376b9692dfd26154bf83395c:xorg-server/.footprint
@@ -8,6 +7,3 @@ f:1380f1a039d4b6ad201300923ceb7c57:mesa/README
 f:21922b5d0a6ecccd82cbe09c9f0c0b65:mesa/Pkgfile
 f:0f03ccf39a6b947c6108b8ad6900f23f:mesa/.signature
 f:ca82cf2b778fcc0d421da1860506b26c:mesa/.footprint
-f:108c28ed980a981c6612320ad13230bc:glslang/Pkgfile
-f:1a6b898e6d30f61e1a3496503ce2e848:glslang/.signature
-f:1a6ecd4b7b915ea98946fb4dc41e703b:glslang/.footprint
