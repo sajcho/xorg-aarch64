@@ -1,9 +1,6 @@
-d:xorg-server
 d:mesa
-f:b4a8fc84eca4309ea73985426fb91bee:xorg-server/Pkgfile
-f:381319d8456a9007968d829defc9a779:xorg-server/.signature
-f:89219c1b376b9692dfd26154bf83395c:xorg-server/.footprint
 f:1380f1a039d4b6ad201300923ceb7c57:mesa/README
-f:c851715d6ce66bca62d4bf5e79662845:mesa/Pkgfile
-f:ecdaed03f8d03a2c228fc48f041355eb:mesa/.signature
-f:a46d98c67dbc31a01eed55f08cf0e8f9:mesa/.footprint
+f:025ac5edd79136fbbdca2aaec5387aab:mesa/no-unlink-megadrivers.patch
+f:e5d47581a3a53e1cabcfa80b8940b239:mesa/Pkgfile
+f:b279133a8f46c87884a458d5405d53f1:mesa/.signature
+f:63717f51aeeabc89dac33ce62a655fcb:mesa/.footprint
