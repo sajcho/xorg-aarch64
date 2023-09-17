@@ -1,6 +1,6 @@
 d:mesa
 f:1380f1a039d4b6ad201300923ceb7c57:mesa/README
 f:025ac5edd79136fbbdca2aaec5387aab:mesa/no-unlink-megadrivers.patch
-f:537aafa72cfad3861e78dfe2e7f6b73a:mesa/Pkgfile
-f:9a09771fb6d899d78b5d41dd90a42346:mesa/.signature
+f:9255b1a4b72e64bc9d0ca391ca014e52:mesa/Pkgfile
+f:97cb0c2c8644a287ea3c8281739c8934:mesa/.signature
 f:63717f51aeeabc89dac33ce62a655fcb:mesa/.footprint
