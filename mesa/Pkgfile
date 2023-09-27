@@ -4,7 +4,7 @@
 # Depends on:	egl-wayland elfutils libva libvdpau libxdamage libxshmfence libxxf86vm llvm-toolchain python3-mako vulkan-validation-layers
 
 name=mesa
-version=23.1.7
+version=23.1.8
 release=1
 source=(https://mesa.freedesktop.org/archive/${name}-${version}.tar.xz \
 	no-unlink-megadrivers.patch)
@@ -13,6 +13,10 @@ build() {
 	cd ${name}-${version}
 
 	patch -p1 -i $SRC/no-unlink-megadrivers.patch
+
+	# fix - llvm-toolchain 17.0.1
+	sed '/Scalar.h/d;/Utils.h/d' \
+		-i src/gallium/auxiliary/gallivm/lp_bld_init.c
 
 	build-meson \
 		-Dplatforms=x11,wayland \
@@ -41,7 +45,6 @@ build() {
 		-Dmicrosoft-clc=disabled \
 		-Dvideo-codecs=vc1dec,h264dec,h264enc,h265dec,h265enc \
 		-Dimagination-srv=true \
-		-Db_lto=false \
 		. build
 
 	meson compile ${JOBS:+-j ${JOBS}} -v -C build
