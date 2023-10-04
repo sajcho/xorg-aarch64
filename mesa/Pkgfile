@@ -4,13 +4,20 @@
 # Depends on:	egl-wayland elfutils libva libvdpau libxdamage libxshmfence libxxf86vm llvm-toolchain python3-mako vulkan-validation-layers
 
 name=mesa
-version=23.1.8
+version=23.2.1
 release=1
 source=(https://mesa.freedesktop.org/archive/${name}-${version}.tar.xz \
 	no-unlink-megadrivers.patch)
 
 build() {
 	cd ${name}-${version}
+
+	export CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/ -w}"
+	export CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/ -w}"
+
+	# from alpine linux:
+	# this converts megadriver installation to use symlinks instead of hardlinks,
+	# and simplifies disk representation (hardlinks are less easy to see)
 
 	patch -p1 -i $SRC/no-unlink-megadrivers.patch
 
@@ -21,30 +28,32 @@ build() {
 	build-meson \
 		-Dplatforms=x11,wayland \
 		-Dllvm=enabled \
+		-Dshared-llvm=enabled \
 		-Dgbm=enabled \
-		-Dgles1=disabled \
+		-Dgles1=enabled \
 		-Dgles2=enabled \
 		-Ddri3=enabled \
 		-Dopengl=true \
 		-Degl=enabled \
 		-Dglvnd=true \
 		-Dglx=dri \
-		-Dosmesa=true \
+		-Dosmesa=false \
 		-Dgallium-vdpau=enabled \
 		-Dgallium-va=enabled \
-		-Dgallium-xa=enabled \
+		-Dgallium-xa=disabled \
 		-Dgallium-nine=false \
 		-Dgallium-extra-hud=false \
-		-Dgallium-drivers=svga,nouveau,etnaviv,kmsro,lima,panfrost,swrast,tegra,v3d,vc4,zink \
+		-Dgallium-drivers=etnaviv,freedreno,kmsro,lima,panfrost,swrast,v3d,vc4,virgl,zink \
 		-Dshared-glapi=enabled \
-		-Dvulkan-drivers=swrast,imagination-experimental \
-		-Dvulkan-layers=device-select,overlay \
+		-Dvulkan-drivers=broadcom,freedreno,panfrost,swrast,imagination-experimental \
+		-Dvulkan-layers=device-select \
 		-Dlibunwind=disabled \
 		-Dlmsensors=disabled \
 		-Dvalgrind=disabled \
 		-Dmicrosoft-clc=disabled \
 		-Dvideo-codecs=vc1dec,h264dec,h264enc,h265dec,h265enc \
 		-Dimagination-srv=true \
+		-Dbuild-tests=false \
 		. build
 
 	meson compile ${JOBS:+-j ${JOBS}} -v -C build
