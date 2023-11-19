@@ -5,7 +5,7 @@
 
 name=mesa
 version=23.2.1
-release=1
+release=2
 source=(https://mesa.freedesktop.org/archive/${name}-${version}.tar.xz \
 	no-unlink-megadrivers.patch)
 
@@ -37,13 +37,13 @@ build() {
 		-Degl=enabled \
 		-Dglvnd=true \
 		-Dglx=dri \
-		-Dosmesa=false \
+		-Dosmesa=true \
 		-Dgallium-vdpau=enabled \
 		-Dgallium-va=enabled \
 		-Dgallium-xa=disabled \
 		-Dgallium-nine=false \
 		-Dgallium-extra-hud=false \
-		-Dgallium-drivers=etnaviv,freedreno,kmsro,lima,panfrost,swrast,v3d,vc4,virgl,zink \
+		-Dgallium-drivers=etnaviv,freedreno,kmsro,lima,nouveau,panfrost,swrast,tegra,v3d,vc4,virgl,zink \
 		-Dshared-glapi=enabled \
 		-Dvulkan-drivers=broadcom,freedreno,panfrost,swrast,imagination-experimental \
 		-Dvulkan-layers=device-select \
